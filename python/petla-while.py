@@ -9,6 +9,7 @@
 
 
 def main(args):
+    
     start = int(input("Podaj liczbę 1: "))
     stop = int(input("Podaj liczbę 2: "))
     while start >= stop:
