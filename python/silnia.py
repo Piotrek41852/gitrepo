@@ -21,7 +21,7 @@ def silnia_it(n):
 
 def main(args):
     #n = 4
-    #rint("{}! = {}".format(n, silnia_it(n)))
+    #print("{}! = {}".format(n, silnia_it(n)))
     assert(silnia_it(0) == 1)
     assert(silnia_it(4) == 24)
     assert(silnia_it(10) == 3628800)
