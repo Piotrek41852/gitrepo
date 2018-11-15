@@ -11,6 +11,18 @@
 
 using namespace std;
 
+bool palindrom(char w[], int r) {
+    bool czy_pal = true ;
+    for (int i = 0; i < r/2; i++) {
+        if ( w[i] != w[r - 1 - i]) {
+            czy_pal = false;
+            break;
+            
+        }
+    }
+    return czy_pal;
+    
+}
 
 
 
@@ -25,7 +37,7 @@ int main(int argc, char **argv)
     cout << strlen(wyraz) << endl;
     if (palindrom(wyraz, strlen(wyraz)))
         cout << "Palindrom!";
-    elase
+    else
         cout << "Nie Palindrom!";
     
     
