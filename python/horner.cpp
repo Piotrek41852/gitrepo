@@ -13,22 +13,35 @@
 #include <iostream>
 using namespace std;
 
-void drukujw(stopien, float tbwsp[] {
-    for (int 
+void drukujw(int stopien, float tbwsp[]) {
+    int i = 0;
+    for(i = 0; i < stopien; i++) {
+        cout << tbwsp[i] << "x^" << stopien-i << " + ";
     
-    
+    }
+    cout << tbwsp[i];
+}
+
+
+float gorner_it(float x, int stopien, float tbwsp) {
+    float wynik = tbwsp[0];
+    for (int i = 0; <= stopien; i++) {
+        wynik = wynik * x + tb[i];
+    }
+    return wynik;
 }
 
 int main(int argc, char **argv)
 {
     float *tbwsp; // wskaźnik
+    float x = 0; 
     int stopien = 0;
 	cout << "Podaj stopień wielomianu";
     cin >> stopien;
     tbwsp = new float [stopien + 1];
 	cout  << tbwsp;
-    for (int 1 = 0; i<= stopien; i++) {
-        cout << "Podaj współczynnik przy potędze"; << stopien-i << ": ";
+    for (int i = 0; i<= stopien; i++) {
+        cout << "Podaj współczynnik przy potędze" << stopien-i << ": ";
         cin >> tbwsp[i];
     }
     
@@ -36,8 +49,8 @@ int main(int argc, char **argv)
     cin >> x;
     
     cout << "Wartość wielomianu o postaci: ";
-    drukuj(stopien, tbwsp);
-    
+    drukujw(stopien, tbwsp);
+    cout << "wynosi: " << horner_it(x, stopien. tbwsp) << endl;
     return 0;
 }
 
