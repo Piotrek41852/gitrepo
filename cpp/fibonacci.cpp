@@ -26,6 +26,12 @@ long int fibonacci_it(int n) {
 }
 
 
+long int fibonacci_re(int n) {
+    if(n == 0) return 0;
+    if(n == 1) return 1;
+    return fibonacci_re(n-1) + fibonacci_re(n-2);
+    
+}
 
 int main(int argc, char **argv)
 {
@@ -33,7 +39,7 @@ int main(int argc, char **argv)
     cout << "Podaj numer wyrazu ciągu";
     cin >> n;
     cout << "Ciąg Fibonacciego do wyrazu" << n << ":" << endl;
-    cout << fibonacci_it(n);
+    cout << fibonacci_re(n);
     
     
     

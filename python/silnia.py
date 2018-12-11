@@ -4,6 +4,14 @@
 #  potega.py
 #  
 
+def silnia_re(n):
+    # warunek brzegowy dla n = 0
+    if n == 0:
+        return = 1
+    return silnia_re(n-1)! * n
+     
+
+
 def silnia_it(n):
     # 0! = 1
     # n! = 1 *...* dla <1;n>
